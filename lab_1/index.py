@@ -1,41 +1,8 @@
 import os
 
-from functions_for_task2 import sortedDictWithFrequency, readCSVFrequency, readFileWithText, statistic
+from functions_for_task2 import sortedDictWithFrequency, readCSVFrequency, readFileWithText, statistic, autoReplaceSymbols
 
-def decoder(text: str, frequency: dict, count: int) -> str:
-    
-    our_frequency = statistic(text)
-    
-    replace = sortedDictWithFrequency(our_frequency, count)
-    print(f"replace - {replace} \n")
-    print(f"frequency - {frequency}")
-    # print(replace, "\n")
-    # print(frequency)
 
-    ind = 0
-    for key in replace:
-        if ind == len(replace):
-            break
-        replace[key] = list(frequency.keys())[ind]
-        ind += 1
-    print(f"\n {replace}")
-
-    new_txt = ""
-    find_in_replace = False
-    for char in text:
-        for key in replace:
-            if char == key:
-                new_txt += replace[key]
-                find_in_replace = True
-                break
-
-        if find_in_replace == False:
-            new_txt += char
-
-        find_in_replace = False
-    new_txt = new_txt.replace("(пробел)", " ")
-
-    return new_txt
 
 
 
@@ -46,13 +13,36 @@ if __name__ == "__main__":
     text = readFileWithText("./cod7.txt", "r", "utf-8")
     print(text, "\n\n")
 
-    while True:
-        count = ''
-        count = int(input("Введите сколько символов из топ популярных необх. заменить. Или отриц. число, чтобы завершить программу "))
-        print(text)
-        if count < 0:
-            break
-        print(decoder(text, frequency, count))
+    our_frequency = statistic(text)
+
+    our_frequency = sortedDictWithFrequency(our_frequency)
+    print(our_frequency, "\n\n")
+
+    new_text, copy_stat_list =  autoReplaceSymbols(text, list(our_frequency.keys()), list(frequency.keys()))
+
+    print(new_text, "\n", copy_stat_list, "\n\n")
+
+
+
+    # while True:
+    #     # count = ''
+    #     # count = int(input("Введите сколько символов из топ популярных необх. заменить. Или отриц. число, чтобы завершить программу "))
+    #     print(text)
+    #     print(f"Статистика зашифрованного текста: {sortedDictWithFrequency(statistic(text))} \n")
+    #     print(f"общая статистика символов: {frequency}")
+
+    #     char1 = input(f"Введите два символа. 1-й символ из зашифрованного текста, 2-й тот, на который хотите заменить\t")
+
+    #     char2 = input()
+
+    #     if char1 in text:
+    #         text = replacer(text, char1, char2)
+    #         # print("\n", text, "\n")
+    #     else:
+    #         print("Вы ввели неправильный символ из текста, такого символа здесь нет\n")
+    #         continue
+
+    #     # print(decoder(text, frequency, count))
 
 
 
