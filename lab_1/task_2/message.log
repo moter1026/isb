@@ -1,0 +1,533 @@
+2024-03-28 18:47:02,123 - INFO - Чтение файла ./texts and frequencies/frequency rus.csv прошло успешно
+2024-03-28 18:47:02,124 - INFO - Чтение файла ./texts and frequencies/cod7.txt прошло успешно
+2024-03-28 18:47:02,124 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,006 - INFO - Чтение файла ./texts and frequencies/frequency for encrypt text.csv прошло успешно
+2024-03-28 18:48:31,008 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,009 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,021 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,022 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,023 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,024 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,025 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,026 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,027 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,028 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,028 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,029 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,029 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,030 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,030 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,031 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,032 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,032 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,032 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,033 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,033 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,033 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,034 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,034 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,034 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,034 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,035 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,035 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,036 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,036 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,037 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,037 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,038 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,038 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,039 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,039 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,040 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,040 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,041 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,041 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,042 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,042 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,043 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,043 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,044 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,044 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,045 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,045 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,046 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,046 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,047 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,047 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,047 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,048 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,048 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,049 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,049 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,049 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,049 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,050 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,050 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,050 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,050 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:31,050 - INFO - Запись в файл ./texts and frequencies/frequency for encrypt text.csv прошла успешно
+2024-03-28 18:48:31,052 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:48:46,110 - INFO - Программа завершилась
+2024-03-28 18:50:00,201 - INFO - Чтение файла './texts and frequencies/frequency rus.csv' прошло успешно
+2024-03-28 18:50:00,201 - INFO - Чтение файла './texts and frequencies/cod7.txt' прошло успешно
+2024-03-28 18:50:00,202 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,602 - INFO - Чтение файла './texts and frequencies/frequency for encrypt text.csv' прошло успешно
+2024-03-28 18:50:30,603 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,604 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,605 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,606 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,607 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,607 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,608 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,608 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,609 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,609 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,609 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,610 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,610 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,610 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,611 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,611 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,612 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,612 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,613 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,613 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,614 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,615 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,616 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,616 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,616 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,617 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,617 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,617 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,617 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,618 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,618 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,618 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,618 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,619 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,619 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,619 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,619 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,620 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,620 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,620 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,620 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,621 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,621 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,621 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,621 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,622 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,622 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,622 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,622 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,623 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,623 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,623 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,624 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,624 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,624 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,624 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,625 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,625 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,625 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,625 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,626 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,626 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,626 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:50:30,626 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:50:30,627 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:51:04,709 - INFO - Запись в файл './texts and frequencies/ready text.txt' прошла успешно
+2024-03-28 18:51:04,710 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:51:04,710 - INFO - Запись в файл './texts and frequencies/frequency ready.csv' прошла успешно
+2024-03-28 18:51:04,710 - INFO - Программа завершилась
+2024-03-28 18:51:51,498 - ERROR - Неудача при открытии файла './texts and frequencies/frequency rus.csv', в функции readCSVFrequency
+2024-03-28 18:51:51,498 - INFO - Чтение файла './texts and frequencies/cod7.txt' прошло успешно
+2024-03-28 18:51:51,499 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:52:28,438 - ERROR - Неудача при открытии файла './texts and frequencies/frequency for encrypt text.csv', в функции readCSVFrequency
+2024-03-28 18:52:28,438 - ERROR - Программа завершилась неудачей
+2024-03-28 18:53:57,743 - INFO - Чтение файла './texts and frequencies/frequency rus.csv' прошло успешно
+2024-03-28 18:53:57,743 - INFO - Чтение файла './texts and frequencies/cod7.txt' прошло успешно
+2024-03-28 18:53:57,743 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,752 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,753 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,753 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,754 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,754 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,755 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,755 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,756 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,756 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,756 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,757 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,757 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,758 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,758 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,759 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,759 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,760 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,760 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,760 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,761 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,761 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,761 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,761 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,762 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,762 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,762 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,762 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,763 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,763 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,763 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,764 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,764 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,764 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,764 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,765 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,765 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,765 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,765 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,766 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,766 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,766 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,767 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,767 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,767 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,767 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,768 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,768 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,768 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,768 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,769 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,769 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,769 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,769 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,769 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,770 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,770 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,770 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,770 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,770 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,770 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,770 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,770 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,771 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:01,771 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:01,771 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:36,249 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:36,250 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:36,250 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:42,869 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:42,870 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:42,871 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:47,665 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:47,666 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:47,668 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:53,298 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:54:53,300 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:54:53,305 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:01,981 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:01,981 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:55:01,983 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:10,850 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:10,851 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:55:10,852 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:17,061 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:17,062 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:55:17,063 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:22,872 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:22,873 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:55:22,874 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:27,420 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:27,421 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:55:27,423 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:31,245 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:31,246 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:55:31,248 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:34,724 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:55:34,724 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:55:34,726 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:56:16,781 - INFO - Программа завершилась
+2024-03-28 18:57:35,950 - INFO - Чтение файла './texts and frequencies/frequency rus.csv' прошло успешно
+2024-03-28 18:57:35,951 - INFO - Чтение файла './texts and frequencies/cod7.txt' прошло успешно
+2024-03-28 18:57:35,951 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,175 - INFO - Чтение файла './texts and frequencies/frequency for encrypt text.csv' прошло успешно
+2024-03-28 18:57:48,176 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,176 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,177 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,178 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,178 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,179 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,179 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,180 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,180 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,180 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,181 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,181 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,181 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,182 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,182 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,182 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,183 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,183 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,183 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,184 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,184 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,184 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,185 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,186 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,186 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,187 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,187 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,188 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,188 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,189 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,189 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,190 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,190 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,191 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,191 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,192 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,192 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,192 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,192 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,193 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,194 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,194 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,195 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,196 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,196 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,196 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,197 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,197 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,197 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,198 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,198 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,198 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,199 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,200 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,200 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,200 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,201 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,201 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,201 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,202 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,202 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,202 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,202 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:57:48,203 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:57:48,204 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:46,128 - INFO - Программа завершилась
+2024-03-28 18:58:49,534 - INFO - Чтение файла './texts and frequencies/frequency rus.csv' прошло успешно
+2024-03-28 18:58:49,535 - INFO - Чтение файла './texts and frequencies/cod7.txt' прошло успешно
+2024-03-28 18:58:49,535 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,436 - INFO - Чтение файла './texts and frequencies/frequency ready.csv' прошло успешно
+2024-03-28 18:58:51,437 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,437 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,438 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,438 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,439 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,440 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,440 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,441 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,441 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,441 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,442 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,442 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,442 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,443 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,443 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,443 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,444 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,445 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,445 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,446 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,446 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,447 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,447 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,448 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,448 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,449 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,450 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,450 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,451 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,451 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,452 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,452 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,453 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,453 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,454 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,454 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,455 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,455 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,456 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,456 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,457 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,457 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,457 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,458 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,458 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,458 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,458 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,459 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,459 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,459 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,460 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,460 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,460 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,461 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,461 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,461 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,462 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,462 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,463 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,463 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,463 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,464 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,464 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 18:58:51,464 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 18:58:51,465 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:00:47,475 - INFO - Программа завершилась
+2024-03-28 19:16:26,729 - INFO - Чтение файла './texts and frequencies/frequency rus.csv' прошло успешно
+2024-03-28 19:16:26,729 - INFO - Чтение файла './texts and frequencies/cod7.txt' прошло успешно
+2024-03-28 19:16:26,729 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,944 - INFO - Чтение файла './texts and frequencies/frequency ready.csv' прошло успешно
+2024-03-28 19:16:33,945 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,946 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,946 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,947 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,947 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,948 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,948 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,949 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,949 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,950 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,950 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,951 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,951 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,952 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,952 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,953 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,953 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,954 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,954 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,954 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,955 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,955 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,955 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,955 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,956 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,956 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,956 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,957 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,957 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,957 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,957 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,958 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,958 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,958 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,958 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,959 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,959 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,959 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,959 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,960 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,960 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,960 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,960 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,961 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,961 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,961 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,961 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,962 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,962 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,962 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,963 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,963 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,963 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,963 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,963 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,964 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,964 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,964 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,964 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,964 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,964 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,965 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,965 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:33,965 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:33,966 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:42,076 - INFO - Программа завершилась
+2024-03-28 19:16:49,802 - INFO - Чтение файла './texts and frequencies/frequency rus.csv' прошло успешно
+2024-03-28 19:16:49,802 - INFO - Чтение файла './texts and frequencies/cod7.txt' прошло успешно
+2024-03-28 19:16:49,802 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,717 - INFO - Чтение файла './texts and frequencies/frequency ready.csv' прошло успешно
+2024-03-28 19:16:51,718 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,718 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,719 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,720 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,720 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,721 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,722 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,722 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,723 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,723 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,724 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,724 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,725 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,726 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,726 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,727 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,727 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,728 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,729 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,729 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,730 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,731 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,731 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,732 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,732 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,733 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,733 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,734 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,734 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,735 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,735 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,736 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,736 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,737 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,737 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,738 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,739 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,740 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,740 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,740 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,740 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,741 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,741 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,742 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,742 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,742 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,742 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,743 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,743 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,743 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,743 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,744 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,744 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,744 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,745 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,745 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,745 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,746 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,746 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,746 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,747 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,747 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,747 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:51,748 - INFO - Запись в файл './texts and frequencies/frequency for encrypt text.csv' прошла успешно
+2024-03-28 19:16:51,749 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:56,305 - INFO - Запись в файл './texts and frequencies/ready text.txt' прошла успешно
+2024-03-28 19:16:56,305 - INFO - Сортировка словаря в sorted_dict_with_frequency прошла успешно
+2024-03-28 19:16:56,306 - INFO - Запись в файл './texts and frequencies/frequency ready.csv' прошла успешно
+2024-03-28 19:16:56,306 - INFO - Программа завершилась
