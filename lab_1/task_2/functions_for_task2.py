@@ -1,49 +1,20 @@
+import consts
 import csv
 import logging
 import math
-import os
+import work_with_json
 
 
-def set_right_directory(folder_name: str) -> bool:
-    """Устанавливает рабочую директорию на folder_name"""
-    path = os.getcwd()[-len(folder_name):]
-    if path == folder_name:
-        return True
-    
-    # Поиск папки в текущей директории и её поддиректориях
-    try:
-        for root, dirs, files in os.walk('.'):
-            if folder_name in dirs:
-                # Папка найдена
-                folder_path = os.path.join(root, folder_name)
-                print("Папка найдена:", folder_path)
+FILES = work_with_json.read_json_file(consts.JSON_FILE)
 
-                # Установка найденной папки как рабочей директории
-                os.chdir(folder_path)
-                print('\033[92m' + "Рабочая директория изменена на:",\
-                      os.getcwd() + '\033[0m')
-                return
-        print("Не удалось установить рабочую директорию")
-    except:
-        print('\033[91m' + "Ошибка установки рабочей директории"\
-              + '\033[0m')
 
-def main():
-    """С этой функции необходимо начинать код для добавления логирования
-    и установки верной рабочей директории"""
-    set_right_directory("task_2")
-
-    logging.basicConfig(filename='message.log', level=logging.DEBUG,\
-                        format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
-
-main()
-# Импортирую consts после вызова main(), чтобы была установлена правильная рабочая
-# директория, ведь в consts используется относительный путь
-import consts
+logging.basicConfig(filename = consts.NAME_LOG_FILE, level = logging.DEBUG,\
+                    format = '%(asctime)s - %(levelname)s - %(message)s', encoding = "utf-8")
 
 
 def read_csv_frequency(file_name: str) -> dict:
-    """Читает файл file_name формата csv с разделителем '=', возвращает словарь с ключом в виде символа и знач. в виде частоты"""
+    """Читает файл file_name формата csv с разделителем '=',
+    возвращает словарь с ключом в виде символа и знач. в виде частоты"""
     try:
         frequency = {}
         with open(file_name, "r", encoding="utf-8") as readFile:
@@ -240,7 +211,7 @@ def auto_replace_symbols(text: str, statistic_text: list, common_frequency: list
             # print(new_text)
             # print(copy_statistic_text)
             write_frequency_for_encrypt_text(
-                consts.FILES["frequency_for_encrypt_text"], sorted_dict_with_frequency(statistic(new_text)))
+                FILES["frequency_for_encrypt_text"], sorted_dict_with_frequency(statistic(new_text)))
 
             ind += 1
 
