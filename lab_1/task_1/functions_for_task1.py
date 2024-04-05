@@ -2,16 +2,14 @@ import logging
 import consts
 import work_with_json
 
-
-logging.basicConfig(filename = consts.NAME_LOG_FILE, level = logging.DEBUG,\
-                    format = '%(asctime)s - %(levelname)s - %(message)s', encoding = "utf-8")
-
+logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
 
 FILES = work_with_json.read_json_file(consts.JSON_FILE)
 
 
 def read_file_txt(file_name: str) -> str:
-    """Читает файл"""
+    """ Читает файл """
     text = ""
     try:
         with open(file_name, "r", encoding="utf-8") as file_txt:
@@ -24,8 +22,9 @@ def read_file_txt(file_name: str) -> str:
     except:
         logging.error(f"Ошибка при чтении файла {file_name} в функции read_file_txt")
 
+
 def write_file(file_name: str, text: str) -> None:
-    """Записывает текст из text в файл с именем file_name"""
+    """ Записывает текст из text в файл с именем file_name """
     try:
         with open(file_name, "w+", encoding="utf-8") as write_file:
             write_file.write(text)
@@ -34,11 +33,12 @@ def write_file(file_name: str, text: str) -> None:
 
     except FileNotFoundError:
         logging.error(f"Не удалось открыть {file_name} в функции write_file")
-    except: 
+    except:
         logging.error(f"Ошибка при записи файла {file_name} в функции write_file")
 
+
 def encrypt_text(text: str, key: str) -> str:
-    """Шифрует текст по таблице Виженера"""
+    """ Шифрует текст по таблице Виженера """
     encrypt_text = ""
     text = text.upper()
     text = text.replace("Ё", "Е")
@@ -54,8 +54,8 @@ def encrypt_text(text: str, key: str) -> str:
         for word in text:
             if ind_key >= len_key:
                 ind_key = 0
-                
-            if not(key[ind_key] in table_vig[0]):
+
+            if not (key[ind_key] in table_vig[0]):
                 ind_key += 1
 
             if ind_key >= len_key:
@@ -63,7 +63,7 @@ def encrypt_text(text: str, key: str) -> str:
 
             # Если word нет в таблице Виженера, то переходим на следующую итерацию
             # print(word)
-            if not(word in table_vig[0]):
+            if not (word in table_vig[0]):
                 encrypt_text += word
                 continue
 
@@ -78,7 +78,7 @@ def encrypt_text(text: str, key: str) -> str:
             for row in table_vig:
                 if row[0] != key[ind_key]:
                     ind_row += 1
-                    continue 
+                    continue
                 encrypt_text += table_vig[ind_row][ind_col]
                 ind_key += 1
                 break
@@ -86,15 +86,16 @@ def encrypt_text(text: str, key: str) -> str:
 
         logging.info(f"Шифрование текста прошло успешно")
         return encrypt_text
-    
+
     except IndexError:
-        logging.error(f"Произошёл выход за границы объекта "\
+        logging.error(f"Произошёл выход за границы объекта " \
                       "в функции encrypt_text")
     except:
         logging.error(f"Произошла ошибка в функции encrypt_text")
 
+
 def shift_alphabet(arr: list, ind: int) -> list:
-    """Смещает влево значения в списке arr до индекса ind"""
+    """ Смещает влево значения в списке arr до индекса ind """
     try:
         new_arr = []
         len_arr = len(arr)
@@ -106,12 +107,13 @@ def shift_alphabet(arr: list, ind: int) -> list:
 
         logging.info(f"Смещение списка прощло успешно")
         return new_arr
-    
+
     except IndexError:
-        logging.error(f"Произошёл выход за границы объекта "\
+        logging.error(f"Произошёл выход за границы объекта " \
                       "в функции shift_alphabet")
     except:
         logging.error(f"Произошла ошибка в функции shift_alphabet")
+
 
 def make_table_vig(alphabet: list) -> list:
     """Создаёт таблицу Виженера"""
@@ -125,9 +127,6 @@ def make_table_vig(alphabet: list) -> list:
             ind += 1
 
         return table_vig
-    
+
     except:
         logging.error(f"Произошла ошибка в функции make_table_vig")
-
-
-

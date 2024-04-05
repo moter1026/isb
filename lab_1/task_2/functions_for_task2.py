@@ -4,17 +4,15 @@ import logging
 import math
 import work_with_json
 
-
 FILES = work_with_json.read_json_file(consts.JSON_FILE)
 
-
-logging.basicConfig(filename = consts.NAME_LOG_FILE, level = logging.DEBUG,\
-                    format = '%(asctime)s - %(levelname)s - %(message)s', encoding = "utf-8")
+logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
+                    format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
 
 
 def read_csv_frequency(file_name: str) -> dict:
-    """Читает файл file_name формата csv с разделителем '=',
-    возвращает словарь с ключом в виде символа и знач. в виде частоты"""
+    """ Читает файл file_name формата csv с разделителем '=',
+    возвращает словарь с ключом в виде символа и знач. в виде частоты. """
     try:
         frequency = {}
         with open(file_name, "r", encoding="utf-8") as readFile:
@@ -25,10 +23,10 @@ def read_csv_frequency(file_name: str) -> dict:
                 else:
                     row[0] = row[0].replace(" ", "")
                     frequency[row[0].replace("(пробел)", " ")] = float(row[1])
-                    
+
         logging.info(f"Чтение файла '{file_name}' прошло успешно")
         return frequency
-    
+
     except FileNotFoundError:
         logging.error(f"Неудача при открытии файла '{file_name}', в функции read_csv_frequency")
     except:
@@ -66,10 +64,11 @@ def write_frequency_for_encrypt_text(file_name: str, freq: dict) -> None:
         logging.info(f"Запись в файл '{file_name}' прошла успешно")
 
     except FileNotFoundError:
-        logging.error(f"Неудача при открытии файла '{file_name}', "\
+        logging.error(f"Неудача при открытии файла '{file_name}', " \
                       f"в функции write_frequency_for_encrypt_text")
     except:
         logging.error(f"Ошибка в функции write_frequency_for_encrypt_text")
+
 
 def write_text_file(file_name: str, text: str) -> None:
     """Записывает текст text в файл file_name"""
@@ -77,21 +76,22 @@ def write_text_file(file_name: str, text: str) -> None:
         print(consts.COLOR_RED + text + consts.COLOR_RESET)
         with open(file_name, "w+", encoding="utf-8") as text_file:
             text_file.write(text)
-        
+
         logging.info(f"Запись в файл '{file_name}' прошла успешно")
 
     except FileNotFoundError:
-        logging.error(f"Неудача при открытии файла '{file_name}', "\
+        logging.error(f"Неудача при открытии файла '{file_name}', " \
                       f"в функции write_text_file")
     except:
         logging.error(f"Ошибка в функции write_text_file")
+
 
 def replacer(text: str, old_char: str, new_char: str) -> str:
     """Заменяет символ old_char на new_char в переданном тексте и возвращает его копию.
     Если в тексте уже есть new_char, то они заменяются на символ, который не используется в тексте"""
     if old_char == new_char:
         return text, new_char
-    
+
     try:
         # Получаю список символов из юникода, для возможности замены, если
         # в старом тексте уже будут иметься те символы, на которые я собираюсь заменять
@@ -110,14 +110,14 @@ def replacer(text: str, old_char: str, new_char: str) -> str:
 
         new_txt = new_txt.replace(old_char, new_char)
         return new_txt, replace_char
-    
+
     except:
         logging.error(f"Ошибка в функции replacer")
 
 
 def sorted_dict_with_frequency(frequency: dict, count: int = 0) -> dict:
-    """Cортирует по значениям словарь с частотностью символов
-    возвращает первые count самых популярных знач"""
+    """ Cортирует по значениям словарь с частотностью символов
+    возвращает первые count самых популярных знач. """
     try:
         arr_frequency = []
 
@@ -157,7 +157,7 @@ def sorted_dict_with_frequency(frequency: dict, count: int = 0) -> dict:
 
         logging.info(f"Сортировка словаря в sorted_dict_with_frequency прошла успешно")
         return new_dict
-    
+
     except IndexError:
         logging.error(f"Выход за границы элемента в sorted_dict_with_frequency")
     except KeyError:
@@ -183,7 +183,7 @@ def statistic(text: str) -> dict:
             our_frequency[key] = our_frequency[key] / all_symbols
 
         return our_frequency
-    
+
     except KeyError:
         logging.error(f"неверный ключ для словаря в statistic")
     except:
@@ -216,7 +216,7 @@ def auto_replace_symbols(text: str, statistic_text: list, common_frequency: list
             ind += 1
 
         return new_text
-    
+
     except IndexError:
         logging.error(f"Выход за границы элемента в auto_replace_symbols")
     except:

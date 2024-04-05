@@ -3,12 +3,10 @@ import logging
 import work_with_json
 
 from functions_for_task2 import sorted_dict_with_frequency, read_csv_frequency, \
-                                read_file_with_text, statistic, auto_replace_symbols, \
-                                replacer, write_frequency_for_encrypt_text, write_text_file
-
+    read_file_with_text, statistic, auto_replace_symbols, \
+    replacer, write_frequency_for_encrypt_text, write_text_file
 
 FILES = work_with_json.read_json_file(consts.JSON_FILE)
-
 
 if __name__ == "__main__":
     try:
@@ -20,10 +18,10 @@ if __name__ == "__main__":
         new_text = text
         res = 0
         while 1:
-            res = input(consts.COLOR_YELLOW + f"Вы хотите заменить буквы по статистике из файла:"\
-                        f"\n1) с общей статистикой({FILES['frequency_ru']})"\
-                        f"\n2) с уже созданной вами до этого статистикой"\
-                        f"({FILES['frequency_for_encrypt_text']})?\n" + consts.COLOR_RESET)
+            res = input(consts.COLOR_YELLOW + f"Вы хотите заменить буквы по статистике из файла:" \
+                                              f"\n1) с общей статистикой({FILES['frequency_ru']})" \
+                                              f"\n2) с уже созданной вами до этого статистикой" \
+                                              f"({FILES['frequency_for_encrypt_text']})?\n" + consts.COLOR_RESET)
             if res == "1":
                 new_text = auto_replace_symbols(text, list(
                     our_frequency.keys()), list(frequency.keys()))
@@ -38,13 +36,13 @@ if __name__ == "__main__":
             print(f"Статистика зашифрованного текста: {sorted_dict_with_frequency(statistic(new_text))} \n")
             print(f"общая статистика символов: {frequency}")
 
-            first_input = input(consts.COLOR_YELLOW + f"Введите два символа:"\
-                                f"\n1-й символ из зашифрованного текста"\
-                                f"\n2-й тот, на который хотите заменить"\
-                                f"\n\nТакже вы можете ввести 'exit', чтобы выйти из процедуры замены символов "\
-                                f"и при желании сохранить текущую статистику и итог. текст в файлы "\
-                                f"c итог. статистикой '{FILES['ready_frequency']}' "\
-                                f"и '{FILES['ready_text']}' и из процедуры замены символов\n"\
+            first_input = input(consts.COLOR_YELLOW + f"Введите два символа:" \
+                                                      f"\n1-й символ из зашифрованного текста" \
+                                                      f"\n2-й тот, на который хотите заменить" \
+                                                      f"\n\nТакже вы можете ввести 'exit', чтобы выйти из процедуры замены символов " \
+                                                      f"и при желании сохранить текущую статистику и итог. текст в файлы " \
+                                                      f"c итог. статистикой '{FILES['ready_frequency']}' " \
+                                                      f"и '{FILES['ready_text']}' и из процедуры замены символов\n" \
                                 + consts.COLOR_RESET)
 
             if first_input.lower() == "exit":
@@ -66,9 +64,9 @@ if __name__ == "__main__":
                     FILES["frequency_for_encrypt_text"], sorted_dict_with_frequency(statistic(new_text)))
             else:
                 print(consts.COLOR_RED +
-                    "Вы ввели неправильный символ из текста, такого символа здесь нет\n" + consts.COLOR_RESET)
+                      f"Вы ввели неправильный символ из текста, такого символа здесь нет\n" + consts.COLOR_RESET)
                 continue
-        
+
         logging.info(f"Программа завершилась")
 
     except:
