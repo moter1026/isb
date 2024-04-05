@@ -1,42 +1,14 @@
 import logging
-import os
-
-def set_right_directory(folder_name: str) -> bool:
-    """Устанавливает рабочую директорию на folder_name"""
-    path = os.getcwd()[-len(folder_name):]
-    if path == folder_name:
-        return True
-    
-    # Поиск папки в текущей директории и её поддиректориях
-    try:
-        for root, dirs, files in os.walk('.'):
-            if folder_name in dirs:
-                # Папка найдена
-                folder_path = os.path.join(root, folder_name)
-                print("Папка найдена:", folder_path)
-
-                # Установка найденной папки как рабочей директории
-                os.chdir(folder_path)
-                print('\033[92m' + "Рабочая директория изменена на:",\
-                      os.getcwd() + '\033[0m')
-                return
-        print("Не удалось установить рабочую директорию")
-    except:
-        print('\033[91m' + "Ошибка установки рабочей директории"\
-              + '\033[0m')
-
-def main():
-    """С этой функции необходимо начинать код для добавления логирования
-    и установки верной рабочей директории"""
-    set_right_directory("task_1")
-
-    logging.basicConfig(filename='message.log', level=logging.DEBUG,\
-                        format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
-
-main()
-# Импортирую consts после вызова main(), чтобы была установлена правильная рабочая
-# директория, ведь в consts используется относительный путь
 import consts
+import work_with_json
+
+
+logging.basicConfig(filename = consts.NAME_LOG_FILE, level = logging.DEBUG,\
+                    format = '%(asctime)s - %(levelname)s - %(message)s', encoding = "utf-8")
+
+
+FILES = work_with_json.read_json_file(consts.JSON_FILE)
+
 
 def read_file_txt(file_name: str) -> str:
     """Читает файл"""
@@ -69,8 +41,12 @@ def encrypt_text(text: str, key: str) -> str:
     """Шифрует текст по таблице Виженера"""
     encrypt_text = ""
     text = text.upper()
+    text = text.replace("Ё", "Е")
     key = key.upper()
+    key = key.replace("Ё", "Е")
     table_vig = make_table_vig(consts.ALPHABET)
+    for str in table_vig:
+        print(str)
     len_key = len(key)
 
     ind_key = 0
@@ -86,14 +62,16 @@ def encrypt_text(text: str, key: str) -> str:
                 ind_key = 0
 
             # Если word нет в таблице Виженера, то переходим на следующую итерацию
+            # print(word)
             if not(word in table_vig[0]):
+                encrypt_text += word
                 continue
 
             ind_col = 0
             for symb in table_vig[0]:
                 if symb != word:
                     ind_col += 1
-                    continue;
+                    continue
                 break
 
             ind_row = 0

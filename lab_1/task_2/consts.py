@@ -10,5 +10,6 @@ COLOR_CYAN = '\033[96m'
 COLOR_RESET = '\033[0m'  # Сброс цвета
 
 
-
-FILES = work_with_json.read_json_file("./files.json")
+JSON_FILE = "./files.json"
+WORK_DIRECTORY = "task_2"
+NAME_LOG_FILE = "message.log"
