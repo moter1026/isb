@@ -1,11 +1,8 @@
-import consts
-import work_with_json
-
 from functions_for_task1 import (read_file_txt, encrypt_text,
-                                 write_file)
+                                 write_file, get_paths_from_json)
 
 if __name__ == "__main__":
-    text_start, key, text_end = work_with_json.read_json_file(consts.JSON_FILE)
+    text_start, key, text_end = get_paths_from_json()
 
     text = read_file_txt(text_start)
     key = read_file_txt(key)

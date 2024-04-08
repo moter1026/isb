@@ -1,15 +1,15 @@
 import consts
 import logging
-import work_with_json
 
 from functions_for_task2 import (sorted_dict_with_frequency,
                                  read_csv_frequency,
                                  read_file_with_text, statistic,
                                  auto_replace_symbols, replacer,
-                                 write_frequency_for_encrypt_text, write_text_file)
+                                 write_frequency_for_encrypt_text,
+                                 write_text_file, get_paths_from_json)
 
 frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\
-    work_with_json.read_json_file(consts.JSON_FILE)
+    get_paths_from_json()
 
 if __name__ == "__main__":
     try:

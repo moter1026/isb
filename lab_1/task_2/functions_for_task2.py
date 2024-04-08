@@ -2,13 +2,38 @@ import consts
 import csv
 import logging
 import math
+import sys
+import os
+sys.path.insert(0, os.path.abspath("../"))
 import work_with_json
 
-frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\
-    work_with_json.read_json_file(consts.JSON_FILE)
+from typing import Any
 
 logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
+
+
+def get_paths_from_json() -> list[Any]:
+    try:
+        data = work_with_json.read_json_file(consts.JSON_FILE)
+
+        frequency_ru_loc = data["frequency_ru"]
+        encrypt_text_loc = data["encrypt_text"]
+        frequency_for_encrypt_text_loc = data["frequency_for_encrypt_text"]
+        ready_frequency_loc = data["ready_frequency"]
+        ready_text_loc = data["ready_text"]
+
+        return [frequency_ru_loc, encrypt_text_loc,
+                frequency_for_encrypt_text_loc,
+                ready_frequency_loc, ready_text_loc]
+
+    except Exception as e:
+        logging.error(f"Произошла ошибка {e} в функции get_paths_from_json")
+
+
+# Необходимые переменные для некоторых функций
+frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\
+    get_paths_from_json()
 
 
 def read_csv_frequency(file_name: str) -> dict:
@@ -210,7 +235,8 @@ def statistic(text: str) -> dict:
         logging.error(f"Ошибка {e} в функции statistic")
 
 
-def auto_replace_symbols(text: str, statistic_text: list, common_frequency: list, count: int = -1) -> str:
+def auto_replace_symbols(text: str, statistic_text: list,
+                         common_frequency: list, count: int = -1) -> str:
     """
     Рассчитывает получить зашифр. текст text и
     отсортированные списки в порядке убывания частоты.

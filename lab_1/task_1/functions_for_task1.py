@@ -1,9 +1,29 @@
 import logging
 import consts
+import sys
+import os
+sys.path.insert(0, os.path.abspath("../"))
+import work_with_json
+
+from typing import Any
 
 
 logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
+
+
+def get_paths_from_json() -> list[Any]:
+    try:
+        data = work_with_json.read_json_file(consts.JSON_FILE)
+
+        text_start = data["text_start"]
+        key = data["key"]
+        text_end = data["text_end"]
+
+        return [text_start, key, text_end]
+
+    except Exception as e:
+        logging.error(f"Произошла ошибка {e} в функции get_paths_from_json")
 
 
 def read_file_txt(file_name: str) -> str:
