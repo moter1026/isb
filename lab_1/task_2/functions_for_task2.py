@@ -9,6 +9,7 @@ import work_with_json
 
 from typing import Any
 
+
 logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
 
@@ -98,7 +99,7 @@ def write_frequency_for_encrypt_text(file_name: str, freq: dict) -> None:
         logging.info(f"Запись в файл '{file_name}' прошла успешно")
 
     except FileNotFoundError:
-        logging.error(f"Неудача при открытии файла '{file_name}', " \
+        logging.error(f"Неудача при открытии файла '{file_name}', "
                       f"в функции write_frequency_for_encrypt_text")
     except Exception as e:
         logging.error(f"Ошибка {e} в функции write_frequency_for_encrypt_text")
@@ -116,7 +117,7 @@ def write_text_file(file_name: str, text: str) -> None:
         logging.info(f"Запись в файл '{file_name}' прошла успешно")
 
     except FileNotFoundError:
-        logging.error(f"Неудача при открытии файла '{file_name}', " \
+        logging.error(f"Неудача при открытии файла '{file_name}', "
                       f"в функции write_text_file")
     except Exception as e:
         logging.error(f"Ошибка {e} в функции write_text_file")

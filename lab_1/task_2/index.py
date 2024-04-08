@@ -8,7 +8,7 @@ from functions_for_task2 import (sorted_dict_with_frequency,
                                  write_frequency_for_encrypt_text,
                                  write_text_file, get_paths_from_json)
 
-frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\
+frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text = \
     get_paths_from_json()
 
 if __name__ == "__main__":
@@ -22,9 +22,9 @@ if __name__ == "__main__":
         res = 0
         while 1:
             res = input(consts.COLOR_YELLOW +
-                        f"Вы хотите заменить буквы по статистике из файла:" \
-                        f"\n1) с общей статистикой({frequency_ru})" \
-                        f"\n2) с уже созданной вами до этого статистикой" \
+                        f"Вы хотите заменить буквы по статистике из файла:"
+                        f"\n1) с общей статистикой({frequency_ru})"
+                        f"\n2) с уже созданной вами до этого статистикой"
                         f"({frequency_for_encrypt_text})?\n" + consts.COLOR_RESET)
             if res == "1":
                 new_text = auto_replace_symbols(text, list(
@@ -42,14 +42,14 @@ if __name__ == "__main__":
             print(f"общая статистика символов: {frequency}")
 
             first_input = input(consts.COLOR_YELLOW +
-                                f"Введите два символа:" \
-                                f"\n1-й символ из зашифрованного текста" \
-                                f"\n2-й тот, на который хотите заменить" \
-                                f"\n\nТакже вы можете ввести 'exit', " \
-                                f"чтобы выйти из процедуры замены символов " \
-                                f"и при желании сохранить текущую статистику и итог. текст в файлы " \
-                                f"c итог. статистикой '{ready_frequency}' " \
-                                f"и '{ready_text}' и из процедуры замены символов\n" \
+                                f"Введите два символа:"
+                                f"\n1-й символ из зашифрованного текста"
+                                f"\n2-й тот, на который хотите заменить"
+                                f"\n\nТакже вы можете ввести 'exit', "
+                                f"чтобы выйти из процедуры замены символов "
+                                f"и при желании сохранить текущую статистику и итог. текст в файлы "
+                                f"c итог. статистикой '{ready_frequency}' "
+                                f"и '{ready_text}' и из процедуры замены символов\n"
                                 + consts.COLOR_RESET)
 
             if first_input.lower() == "exit":

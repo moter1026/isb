@@ -112,7 +112,7 @@ def encrypt_text(text: str, key: str) -> str:
         return encrypt_text
 
     except IndexError:
-        logging.error(f"Произошёл выход за границы объекта " \
+        logging.error(f"Произошёл выход за границы объекта "
                       "в функции encrypt_text")
     except Exception as e:
         logging.error(f"Произошла ошибка {e} в функции encrypt_text")
@@ -135,7 +135,7 @@ def shift_alphabet(arr: list, ind: int) -> list:
         return new_arr
 
     except IndexError:
-        logging.error(f"Произошёл выход за границы объекта " \
+        logging.error(f"Произошёл выход за границы объекта "
                       "в функции shift_alphabet")
     except Exception as e:
         logging.error(f"Произошла ошибка {e} в функции shift_alphabet")
