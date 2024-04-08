@@ -1,3 +1,5 @@
+from typing import Tuple
+
 import consts
 import csv
 import logging
@@ -7,7 +9,8 @@ import sys
 sys.path.insert(0, os.path.abspath('../'))
 import work_with_json
 
-FILES = work_with_json.read_json_file(consts.JSON_FILE)
+frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\
+    work_with_json.read_json_file(consts.JSON_FILE)
 
 logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
@@ -99,7 +102,7 @@ def write_text_file(file_name: str, text: str) -> None:
         logging.error(f"Ошибка {e} в функции write_text_file")
 
 
-def replacer(text: str, old_char: str, new_char: str) -> str:
+def replacer(text: str, old_char: str, new_char: str) -> tuple[str, str]:
     """
     Заменяет символ old_char на new_char в переданном тексте и
     возвращает его копию.
@@ -238,7 +241,7 @@ def auto_replace_symbols(text: str, statistic_text: list, common_frequency: list
 
             copy_statistic_text[ind] = char
 
-            write_frequency_for_encrypt_text(FILES["frequency_for_encrypt_text"],
+            write_frequency_for_encrypt_text(frequency_for_encrypt_text,
                                              sorted_dict_with_frequency(statistic(new_text)))
 
             ind += 1

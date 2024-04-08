@@ -1,8 +1,5 @@
 import consts
 import logging
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../'))
 import work_with_json
 
 from functions_for_task2 import (sorted_dict_with_frequency,
@@ -11,13 +8,13 @@ from functions_for_task2 import (sorted_dict_with_frequency,
                                  auto_replace_symbols, replacer,
                                  write_frequency_for_encrypt_text, write_text_file)
 
-
-FILES = work_with_json.read_json_file(consts.JSON_FILE)
+frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\
+    work_with_json.read_json_file(consts.JSON_FILE)
 
 if __name__ == "__main__":
     try:
-        frequency = read_csv_frequency(FILES["frequency_ru"])
-        text = read_file_with_text(FILES["encrypt_text"], "r", "utf-8")
+        frequency = read_csv_frequency(frequency_ru)
+        text = read_file_with_text(encrypt_text, "r", "utf-8")
         our_frequency = sorted_dict_with_frequency(statistic(text))
         print(text, "\n\n")
 
@@ -26,16 +23,16 @@ if __name__ == "__main__":
         while 1:
             res = input(consts.COLOR_YELLOW +
                         f"Вы хотите заменить буквы по статистике из файла:" \
-                        f"\n1) с общей статистикой({FILES['frequency_ru']})" \
+                        f"\n1) с общей статистикой({frequency_ru})" \
                         f"\n2) с уже созданной вами до этого статистикой" \
-                        f"({FILES['frequency_for_encrypt_text']})?\n" + consts.COLOR_RESET)
+                        f"({frequency_for_encrypt_text})?\n" + consts.COLOR_RESET)
             if res == "1":
                 new_text = auto_replace_symbols(text, list(
                     our_frequency.keys()), list(frequency.keys()))
                 break
             elif res == "2":
                 new_text = auto_replace_symbols(text, list(our_frequency.keys()),
-                                                list(read_csv_frequency(FILES["ready_frequency"]).keys()))
+                                                list(read_csv_frequency(ready_frequency).keys()))
                 break
 
         while 1:
@@ -51,16 +48,16 @@ if __name__ == "__main__":
                                 f"\n\nТакже вы можете ввести 'exit', " \
                                 f"чтобы выйти из процедуры замены символов " \
                                 f"и при желании сохранить текущую статистику и итог. текст в файлы " \
-                                f"c итог. статистикой '{FILES['ready_frequency']}' " \
-                                f"и '{FILES['ready_text']}' и из процедуры замены символов\n" \
+                                f"c итог. статистикой '{ready_frequency}' " \
+                                f"и '{ready_text}' и из процедуры замены символов\n" \
                                 + consts.COLOR_RESET)
 
             if first_input.lower() == "exit":
                 save = input(f"Сохранить данные?\n1)Да\n2)Нет\n")
                 if int(save) == 1:
-                    write_text_file(FILES["ready_text"], new_text)
+                    write_text_file(ready_text, new_text)
                     write_frequency_for_encrypt_text(
-                        FILES["ready_frequency"],
+                        ready_frequency,
                         sorted_dict_with_frequency(statistic(new_text)))
                 break
             second_input = input()
@@ -72,7 +69,7 @@ if __name__ == "__main__":
                     new_text, replace_char, first_input)
 
                 write_frequency_for_encrypt_text(
-                    FILES["frequency_for_encrypt_text"],
+                    frequency_for_encrypt_text,
                     sorted_dict_with_frequency(statistic(new_text)))
             else:
                 print(consts.COLOR_RED +

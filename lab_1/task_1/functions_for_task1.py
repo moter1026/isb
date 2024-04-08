@@ -1,15 +1,9 @@
 import logging
 import consts
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../'))
-import work_with_json
+
 
 logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
-
-
-FILES = work_with_json.read_json_file(consts.JSON_FILE)
 
 
 def read_file_txt(file_name: str) -> str:
