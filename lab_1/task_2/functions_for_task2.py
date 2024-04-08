@@ -1,12 +1,7 @@
-from typing import Tuple
-
 import consts
 import csv
 import logging
 import math
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../'))
 import work_with_json
 
 frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\

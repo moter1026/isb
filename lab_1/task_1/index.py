@@ -1,7 +1,4 @@
 import consts
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../'))
 import work_with_json
 
 from functions_for_task1 import (read_file_txt, encrypt_text,

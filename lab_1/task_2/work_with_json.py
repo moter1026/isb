@@ -1,5 +1,5 @@
 import json
-from typing import Tuple, Any, List
+from typing import Any
 
 
 def read_json_file(json_file_name) -> list[Any]:
