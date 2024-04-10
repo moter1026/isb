@@ -7,6 +7,7 @@ import os
 sys.path.insert(0, os.path.abspath("../"))
 import work_with_json
 
+from collections import Counter
 from typing import Any
 
 
@@ -218,18 +219,10 @@ def statistic(text: str) -> dict:
     Возвращает статистику текста. Частотность символов в переданном тексте
     """
     try:
-        counter = {}
-        all_symbols = len(text)
-
-        for char in text:
-            if char in counter.keys():
-                counter[char] += 1
-            else:
-                counter[char] = 1
-        our_frequency = counter
+        our_frequency = Counter(text)
 
         for key in our_frequency:
-            our_frequency[key] = our_frequency[key] / all_symbols
+            our_frequency[key] = our_frequency[key] / len(text)
 
         return our_frequency
 
