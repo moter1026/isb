@@ -14,9 +14,12 @@ logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
 
 
-def get_paths_from_json() -> list[Any]:
+def get_paths_from_json(json_file: str) -> list[Any]:
+    """
+    Читает из json файла необходимые для 2-го задания данные
+    """
     try:
-        data = work_with_json.read_json_file(consts.JSON_FILE)
+        data = work_with_json.read_json_file(json_file)
 
         frequency_ru_loc = data["frequency_ru"]
         encrypt_text_loc = data["encrypt_text"]
@@ -34,7 +37,7 @@ def get_paths_from_json() -> list[Any]:
 
 # Необходимые переменные для некоторых функций
 frequency_ru, encrypt_text, frequency_for_encrypt_text, ready_frequency, ready_text =\
-    get_paths_from_json()
+    get_paths_from_json(consts.JSON_FILE)
 
 
 def read_csv_frequency(file_name: str) -> dict:

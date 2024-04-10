@@ -12,6 +12,7 @@ def read_json_file(json_file_name) -> dict:
             data = json.load(JSON_file)
 
         return data
+
     except FileNotFoundError:
         logging.error(f"Неудача при открытии файла '{json_file_name}',"
                       f" в функции read_csv_frequency")

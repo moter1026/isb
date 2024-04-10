@@ -1,7 +1,7 @@
 import logging
-import consts
 import sys
 import os
+import consts
 sys.path.insert(0, os.path.abspath("../"))
 import work_with_json
 
@@ -12,9 +12,12 @@ logging.basicConfig(filename=consts.NAME_LOG_FILE, level=logging.DEBUG, \
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding="utf-8")
 
 
-def get_paths_from_json() -> list[Any]:
+def get_paths_from_json(json_file: str) -> list[Any]:
+    """
+    Читает из json файла необходимые для 1-го задания данные
+    """
     try:
-        data = work_with_json.read_json_file(consts.JSON_FILE)
+        data = work_with_json.read_json_file(json_file)
 
         text_start = data["text_start"]
         key = data["key"]
@@ -40,7 +43,7 @@ def read_file_txt(file_name: str) -> str:
     except FileNotFoundError:
         logging.error(f"Не удалось открыть {file_name} в функции read_file_txt")
     except Exception as e:
-        logging.error(f"Ошибка при чтени {e} и файла {file_name} в функции read_file_txt")
+        logging.error(f"Ошибка при чтении {e} и файла {file_name} в функции read_file_txt")
 
 
 def write_file(file_name: str, text: str) -> None:
@@ -56,21 +59,23 @@ def write_file(file_name: str, text: str) -> None:
     except FileNotFoundError:
         logging.error(f"Не удалось открыть {file_name} в функции write_file")
     except Exception as e:
-        logging.error(f"Ошибка при запис {e} и файла {file_name} в функции write_file")
+        logging.error(f"Ошибка при записи {e} и файла {file_name} в функции write_file")
 
 
-def encrypt_text(text: str, key: str) -> str:
+def encrypt_text(text: str, key: str, alphabet: list[str]) -> str:
     """
     Шифрует текст по таблице Виженера
     """
-    encrypt_text = ""
+    encrypt_text_loc = ""
     text = text.upper()
     text = text.replace("Ё", "Е")
     key = key.upper()
     key = key.replace("Ё", "Е")
-    table_vig = make_table_vig(consts.ALPHABET)
+
+    table_vig = make_table_vig(alphabet)
     for str in table_vig:
         print(str)
+
     len_key = len(key)
 
     ind_key = 0
@@ -88,7 +93,7 @@ def encrypt_text(text: str, key: str) -> str:
             # Если word нет в таблице Виженера, то переходим на следующую итерацию
             # print(word)
             if not (word in table_vig[0]):
-                encrypt_text += word
+                encrypt_text_loc += word
                 continue
 
             ind_col = 0
@@ -103,13 +108,13 @@ def encrypt_text(text: str, key: str) -> str:
                 if row[0] != key[ind_key]:
                     ind_row += 1
                     continue
-                encrypt_text += table_vig[ind_row][ind_col]
+                encrypt_text_loc += table_vig[ind_row][ind_col]
                 ind_key += 1
                 break
             ind_col += 1
 
         logging.info(f"Шифрование текста прошло успешно")
-        return encrypt_text
+        return encrypt_text_loc
 
     except IndexError:
         logging.error(f"Произошёл выход за границы объекта "
@@ -158,6 +163,3 @@ def make_table_vig(alphabet: list) -> list:
 
     except Exception as e:
         logging.error(f"Произошла ошибка {e} в функции make_table_vig")
-
-
-
