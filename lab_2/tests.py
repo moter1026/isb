@@ -102,12 +102,11 @@ def longest_sequence_of_ones(subsequence: str) -> float:
                 continue
 
             if was_one:
-                max_count = count if max_count < count else max_count
+                max_count = max(count, max_count)
                 count = 0
                 was_one = False
 
-        if max_count < count:
-            max_count = count
+        max_count = max(count, max_count)
 
         if max_count <= 1:
             count_ones[0] += 1 
