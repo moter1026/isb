@@ -3,6 +3,7 @@ import consts
 
 from scipy.special import gammainc
 
+
 def check_binary_subsequence(subsequnce: str) -> None:
     """
     Проверяет последовательность на бинарность.
@@ -12,6 +13,7 @@ def check_binary_subsequence(subsequnce: str) -> None:
     for symb in subsequnce:
         if symb != "1" and symb != "0":
             raise NameError("Not binary subsequence")
+
 
 def frequency_binary_test(subsequence: str) -> float:
     """
@@ -88,7 +90,6 @@ def longest_sequence_of_ones(subsequence: str) -> float:
     while ind < (len_subsequnce / consts.BLOCK_M):
         ind_start = consts.BLOCK_M * ind
         ind_end = ind_start + consts.BLOCK_M
-        # subsequence.append(subsequence[ind_start: ind_end])
         block_str = subsequence[ind_start: ind_end]
 
         max_count = 0
