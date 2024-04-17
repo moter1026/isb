@@ -31,7 +31,7 @@ def frequency_binary_test(subsequence: str) -> float:
             sum_x += 1
         else:
             sum_x -= 1
-    
+
     Sn = abs((1 / math.sqrt(len(subsequence))) * sum_x)
     return math.erfc(Sn / math.sqrt(2))
 
@@ -50,12 +50,12 @@ def the_same_bits_test(subsequence: str) -> float:
     for bit in subsequence:
         if bit == "1":
             sum_x += 1
-    
+
     sigma = sum_x / len_subsequnce
 
-    if not(abs(sigma - 0.5) < (2 / math.sqrt(len_subsequnce))):
+    if not (abs(sigma - 0.5) < (2 / math.sqrt(len_subsequnce))):
         return 0
-    
+
     Vn = 0
     prev = 0
     is_first = True
@@ -70,9 +70,9 @@ def the_same_bits_test(subsequence: str) -> float:
             prev = bit
         else:
             prev = bit
-    
+
     return math.erfc(abs(Vn - 2 * len_subsequnce * sigma * (1 - sigma)) /
-                    (2 * math.sqrt(2 * len_subsequnce) * sigma * (1 - sigma)))
+                     (2 * math.sqrt(2 * len_subsequnce) * sigma * (1 - sigma)))
 
 
 def longest_sequence_of_ones(subsequence: str) -> float:
@@ -84,8 +84,8 @@ def longest_sequence_of_ones(subsequence: str) -> float:
     последовательность признается случайной
     """
     len_subsequnce = len(subsequence)
-    count_ones = [0,0,0,0]
-    
+    count_ones = [0, 0, 0, 0]
+
     ind = 0
     while ind < (len_subsequnce / consts.BLOCK_M):
         ind_start = consts.BLOCK_M * ind
@@ -94,22 +94,18 @@ def longest_sequence_of_ones(subsequence: str) -> float:
 
         max_count = 0
         count = 0
-        was_one = False
         for bit in block_str:
             if bit == "1":
                 count += 1
-                was_one = True
                 continue
 
-            if was_one:
-                max_count = max(count, max_count)
-                count = 0
-                was_one = False
+            max_count = max(count, max_count)
+            count = 0
 
         max_count = max(count, max_count)
 
         if max_count <= 1:
-            count_ones[0] += 1 
+            count_ones[0] += 1
         elif max_count == 2:
             count_ones[1] += 1
         elif max_count == 3:
@@ -120,9 +116,8 @@ def longest_sequence_of_ones(subsequence: str) -> float:
         ind += 1
 
     hi_quadro = 0
-    ind = 0
-    for Vi in count_ones:
-        hi_quadro += math.pow((Vi - 16 * consts.PI[ind]), 2) /\
-                    (16 * consts.PI[ind])
-        
+    for i in range(len(count_ones)):
+        hi_quadro += math.pow((count_ones[i] - 16 * consts.PI[i]), 2) / \
+                     (16 * consts.PI[i])
+
     return gammainc(3 / 2, hi_quadro / 2)
