@@ -1,6 +1,5 @@
 import logging
 import os
-import codecs
 
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
@@ -46,16 +45,19 @@ class Cryptography:
         local_private_key = keys
         local_public_key = keys.public_key()
 
-        work_with_files.write_file_in_bytes(self.symmetric_key,
-                                            asymmetric_actions(
-                                                local_simmetric_key, local_public_key, Mode.GENERATE))
-        work_with_files.write_file_in_bytes(self.public_key,
-                                            local_public_key.public_bytes(encoding=serialization.Encoding.PEM,
-                                                                          format=serialization.PublicFormat.SubjectPublicKeyInfo))
-        work_with_files.write_file_in_bytes(self.private_key,
-                                            local_private_key.private_bytes(encoding=serialization.Encoding.PEM,
-                                                                            format=serialization.PrivateFormat.TraditionalOpenSSL,
-                                                                            encryption_algorithm=serialization.NoEncryption()))
+        work_with_files.write_file_in_bytes(
+            self.symmetric_key,
+            asymmetric_actions(
+                local_simmetric_key, local_public_key, Mode.GENERATE))
+        work_with_files.write_file_in_bytes(
+            self.public_key,
+            local_public_key.public_bytes(encoding=serialization.Encoding.PEM,
+                                          format=serialization.PublicFormat.SubjectPublicKeyInfo))
+        work_with_files.write_file_in_bytes(
+            self.private_key,
+            local_private_key.private_bytes(encoding=serialization.Encoding.PEM,
+                                            format=serialization.PrivateFormat.TraditionalOpenSSL,
+                                            encryption_algorithm=serialization.NoEncryption()))
 
     def encrypt(self, path_of_decrypt_text: str, path_of_encrypt_text) -> None:
         """

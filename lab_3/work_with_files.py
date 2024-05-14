@@ -9,11 +9,10 @@ def read_json_file(json_file_name) -> dict:
     Читает JSON файл и возвращает словарь с его данными
     """
     try:
-        data = {}
         with open(json_file_name, "r", encoding="utf-8") as JSON_file:
-            data = json.load(JSON_file)
+            json_data = json.load(JSON_file)
 
-        return data
+        return json_data
 
     except FileNotFoundError:
         logging.error(f"Неудача при открытии файла '{json_file_name}',"
