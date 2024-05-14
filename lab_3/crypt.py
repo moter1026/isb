@@ -1,12 +1,15 @@
 import logging
 import os
+import codecs
 
+from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
 
 import work_with_files
 
 from asymetric_functions import asymmetric_actions, Mode
+from symmetric_functions import symmetric_encrypt, symmetric_decrypt
 
 
 class Cryptography:
@@ -43,28 +46,58 @@ class Cryptography:
         local_private_key = keys
         local_public_key = keys.public_key()
 
-        work_with_files.write_file(self.symmetric_key,
-                                   asymmetric_actions(
-                                       local_simmetric_key, local_public_key, Mode.GENERATE))
-        work_with_files.write_file(self.public_key, local_public_key)
-        work_with_files.write_file(self.symmetric_key, local_private_key)
+        work_with_files.write_file_in_bytes(self.symmetric_key,
+                                            asymmetric_actions(
+                                                local_simmetric_key, local_public_key, Mode.GENERATE))
+        work_with_files.write_file_in_bytes(self.public_key,
+                                            local_public_key.public_bytes(encoding=serialization.Encoding.PEM,
+                                                                          format=serialization.PublicFormat.SubjectPublicKeyInfo))
+        work_with_files.write_file_in_bytes(self.private_key,
+                                            local_private_key.private_bytes(encoding=serialization.Encoding.PEM,
+                                                                            format=serialization.PrivateFormat.TraditionalOpenSSL,
+                                                                            encryption_algorithm=serialization.NoEncryption()))
 
     def encrypt(self, path_of_decrypt_text: str, path_of_encrypt_text) -> None:
         """
+        Метод кодирует текст из входного файла в выходной
 
-        :param path_of_decrypt_text:
-        :param path_of_encrypt_text:
+        :param path_of_decrypt_text: входной файл
+        :param path_of_encrypt_text: выходной файл
         :return:
         """
+        local_symmetric_key = work_with_files.read_file_in_bytes(self.symmetric_key)
 
-        local_symmetric_key = work_with_files.read_file(self.symmetric_key)
-        local_private_key = load_pem_private_key(
-            work_with_files.read_file(self.private_key), password=None)
-        # Расшифровываем симметричный ключ, ассимметричным приветным ключом
+        local_private_key = work_with_files.read_file_in_bytes(self.private_key)
+        local_private_key = load_pem_private_key(local_private_key, password=None)
+
+        # # Расшифровываем симметричный ключ, ассимметричным приветным ключом
         local_symmetric_key = asymmetric_actions(local_symmetric_key,
                                                  local_private_key,
                                                  Mode.DECRYPTION)
-        text = work_with_files.read_file(path_of_encrypt_text)
 
+        text = work_with_files.read_file_in_bytes(path_of_decrypt_text)
+        text = symmetric_encrypt(text, local_symmetric_key)
 
+        work_with_files.write_file_in_bytes(path_of_encrypt_text, text)
 
+    def decrypt(self, path_of_encrypt_text: str, path_of_decrypt_text: str) -> None:
+        """
+        Метод декодирует текст из входного файла в выходной
+
+        :param path_of_encrypt_text: входной файл
+        :param path_of_decrypt_text: выходной файл
+        :return:
+        """
+        local_symmetric_key = work_with_files.read_file_in_bytes(self.symmetric_key)
+
+        local_private_key = work_with_files.read_file_in_bytes(self.private_key)
+        local_private_key = load_pem_private_key(local_private_key, password=None)
+
+        # # Расшифровываем симметричный ключ, ассимметричным приветным ключом
+        local_symmetric_key = asymmetric_actions(local_symmetric_key,
+                                                 local_private_key,
+                                                 Mode.DECRYPTION)
+
+        text = work_with_files.read_file_in_bytes(path_of_encrypt_text)
+        text = symmetric_decrypt(text, local_symmetric_key)
+        work_with_files.write_file(path_of_decrypt_text, text)
