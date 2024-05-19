@@ -3,7 +3,7 @@ import os
 
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
-from cryptography.hazmat.primitives.serialization import load_pem_private_key
+from cryptography.hazmat.primitives.serialization import load_pem_private_key, load_pem_public_key
 
 import work_with_files
 
@@ -31,12 +31,11 @@ class Cryptography:
 
     def get_public_key(self) -> rsa.RSAPublicKey:
         """
-        Получает публичный ключ из приветного ключа, записанного в файле
-        self.private_key_path
+        Получает публичный ключ из файла self.public_key_path
         :return: rsa.RSAPublicKey
         """
-        local_private_key = self.get_private_key()
-        return local_private_key.public_key()
+        local_public_key = work_with_files.read_file_in_bytes(self.public_key_path)
+        return load_pem_public_key(local_public_key)
 
     def generate_keys(self, size_of_key: int) -> None:
         """
@@ -70,7 +69,8 @@ class Cryptography:
         Получает публичный ключ асимметричного алгоритма
         и записывает его в файл self.public_key_path
         """
-        local_public_key = self.get_public_key()
+        local_private_key = self.get_private_key()
+        local_public_key = local_private_key.public_key()
 
         work_with_files.write_file_in_bytes(
             self.public_key_path,

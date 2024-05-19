@@ -62,32 +62,43 @@ if __name__ == "__main__":
             names_of_files["decrypted_file"] = args.decrypted_path if args.decrypted_path else None
 
         # В зависимости от аргументов при запуске, выполняем разные действия
-        if args.generation_all:
+        if args.generation_all and (names_of_files["symmetric_key"] and
+                                    names_of_files["public_key"] and
+                                    names_of_files["private_key"]):
             # генерируем ключи
             crypt = create_crypt_obj(names_of_files)
             crypt.generate_keys(args.size_key)
 
-        elif args.generation_symmetric and args.asymmetric_public_path:
+        elif args.generation_symmetric and names_of_files["public_key"]:
             # генерируем симметричный ключ
             crypt = create_crypt_obj(names_of_files)
             crypt.generate_symmetric_key(args.size_key)
 
-        elif args.generation_asymmetric:
+        elif args.generation_asymmetric and (names_of_files["private_key"] and
+                                             names_of_files["public_key"]):
             # генерируем ассиметричные ключи
             crypt = create_crypt_obj(names_of_files)
             crypt.generate_private_key()
             crypt.generate_public_key()
 
-        elif args.encryption:
+        elif args.encryption and (names_of_files["symmetric_key"] and
+                                  names_of_files["private_key"] and
+                                  names_of_files["initial_file"] and
+                                  names_of_files["encrypted_file"]):
             crypt = create_crypt_obj(names_of_files)
             crypt.encrypt(names_of_files["initial_file"], names_of_files["encrypted_file"])
 
-        elif args.decryption:
+        elif args.decryption and (names_of_files["symmetric_key"] and
+                                  names_of_files["private_key"] and
+                                  names_of_files["decrypted_file"] and
+                                  names_of_files["encrypted_file"]):
             crypt = create_crypt_obj(names_of_files)
             crypt.decrypt(names_of_files["encrypted_file"], names_of_files["decrypted_file"])
+
         else:
-            # дешифруем
-            print()
+            exeption_text = "Скорее всего вы передали не все необходимые данные"
+            logging.exception(exeption_text)
+            print(exeption_text)
 
     except Exception as e:
         err_text = f"Error {e}"
