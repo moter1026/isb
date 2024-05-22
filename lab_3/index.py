@@ -1,5 +1,6 @@
 import logging
 import argparse
+from enum import Enum
 
 from crypto import Cryptography
 from work_with_files import read_json_file
@@ -11,22 +12,26 @@ def create_crypt_obj(names_dict: dict) -> Cryptography:
                         names_dict["private_key"])
 
 
+class Option(Enum):
+    GENERATE_ALL_KEY = 0
+    GENERATE_SYMMETRIC_KEY = 1
+    GENERATE_ASYMMETRIC_KEYS = 2
+    ENCRYPT = 3
+    DECRYPT = 4
+
+
 if __name__ == "__main__":
     logging.basicConfig(filename="message.log", filemode="a", level=logging.INFO)
     try:
         parser = argparse.ArgumentParser()
         group = parser.add_mutually_exclusive_group(required=True)
-        group.add_argument('-genall', '--generation_all', action='store_true',
-                           help='Запускает режим генерации ключей')
-        group.add_argument('-gensy', '--generation_symmetric', action='store_true',
-                           help='Запускает режим генерации симметричного ключа. \n'
-                                'Для успешного запуска необходим публичный ключ')
-        group.add_argument('-genass', '--generation_asymmetric', action='store_true',
-                           help='Запускает режим генерации асимметричных ключей')
-        group.add_argument('-enc', '--encryption', action='store_true',
-                           help='Запускает режим шифрования')
-        group.add_argument('-dec', '--decryption', action='store_true',
-                           help='Запускает режим дешифрования')
+        group.add_argument('-opt', '--options', type=int,
+                           help='0 - Запускает режим генерации всех ключей'
+                                '1 - Запускает режим генерации симметричного ключа. \n'
+                                '\tДля успешного запуска необходим публичный ключ'
+                                '2 - Запускает режим генерации асимметричных ключей'
+                                '3 - Запускает режим шифрования'
+                                '4 - Запускает режим дешифрования')
 
         # Аргументы, получающие пути сохранения файлов
         parser.add_argument("-pj", "--paths_json", type=str,
@@ -62,43 +67,54 @@ if __name__ == "__main__":
             names_of_files["decrypted_file"] = args.decrypted_path if args.decrypted_path else None
 
         # В зависимости от аргументов при запуске, выполняем разные действия
-        if args.generation_all and (names_of_files["symmetric_key"] and
-                                    names_of_files["public_key"] and
-                                    names_of_files["private_key"]):
-            # генерируем ключи
-            crypt = create_crypt_obj(names_of_files)
-            crypt.generate_keys(args.size_key)
+        match args.options:
+            case Option.GENERATE_ALL_KEY.value:
+                if not (names_of_files["symmetric_key"] and
+                        names_of_files["public_key"] and
+                        names_of_files["private_key"]):
+                    raise "Не переданы все необходимые пути"
 
-        elif args.generation_symmetric and names_of_files["public_key"]:
-            # генерируем симметричный ключ
-            crypt = create_crypt_obj(names_of_files)
-            crypt.generate_symmetric_key(args.size_key)
+                # генерируем ключи
+                crypt = create_crypt_obj(names_of_files)
+                crypt.generate_keys(args.size_key)
 
-        elif args.generation_asymmetric and (names_of_files["private_key"] and
-                                             names_of_files["public_key"]):
-            # генерируем ассиметричные ключи
-            crypt = create_crypt_obj(names_of_files)
-            crypt.generate_private_key()
-            crypt.generate_public_key()
+            case Option.GENERATE_SYMMETRIC_KEY.value:
+                if not names_of_files["public_key"]:
+                    raise "Не переданы все необходимые пути"
 
-        elif args.encryption and (names_of_files["symmetric_key"] and
-                                  names_of_files["private_key"] and
-                                  names_of_files["initial_file"] and
-                                  names_of_files["encrypted_file"]):
-            crypt = create_crypt_obj(names_of_files)
-            crypt.encrypt(names_of_files["initial_file"], names_of_files["encrypted_file"])
+                # генерируем симметричный ключ
+                crypt = create_crypt_obj(names_of_files)
+                crypt.generate_symmetric_key(args.size_key)
 
-        elif args.decryption and (names_of_files["symmetric_key"] and
-                                  names_of_files["private_key"] and
-                                  names_of_files["decrypted_file"] and
-                                  names_of_files["encrypted_file"]):
-            crypt = create_crypt_obj(names_of_files)
-            crypt.decrypt(names_of_files["encrypted_file"], names_of_files["decrypted_file"])
+            case Option.GENERATE_ASYMMETRIC_KEYS.value:
+                if not (names_of_files["private_key"] and
+                        names_of_files["public_key"]):
+                    raise "Не переданы все необходимые пути"
 
-        else:
-            exeption_text = "Скорее всего вы передали не все необходимые данные"
-            logging.exception(exeption_text)
-            print(exeption_text)
+                # генерируем ассиметричные ключи
+                crypt = create_crypt_obj(names_of_files)
+                crypt.generate_private_key()
+                crypt.generate_public_key()
+
+            case Option.ENCRYPT.value:
+                if not (names_of_files["symmetric_key"] and
+                        names_of_files["private_key"] and
+                        names_of_files["initial_file"] and
+                        names_of_files["encrypted_file"]):
+                    raise "Не переданы все необходимые пути"
+
+                crypt = create_crypt_obj(names_of_files)
+                crypt.encrypt(names_of_files["initial_file"], names_of_files["encrypted_file"])
+
+            case Option.DECRYPT.value:
+                if not (names_of_files["symmetric_key"] and
+                        names_of_files["private_key"] and
+                        names_of_files["decrypted_file"] and
+                        names_of_files["encrypted_file"]):
+                    raise "Не переданы все необходимые пути"
+
+                crypt = create_crypt_obj(names_of_files)
+                crypt.decrypt(names_of_files["encrypted_file"], names_of_files["decrypted_file"])
 
     except Exception as e:
         err_text = f"Error {e}"
