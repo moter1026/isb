@@ -1,12 +1,14 @@
 import hashlib
-import itertools
 import logging
-from typing import Any
-import matplotlib
+import math
 import multiprocessing as mp
+import time
+
+from typing import Any
+from matplotlib import pyplot as plt
 
 
-class Check_cumber_of_card:
+class Check_number_of_card:
     def __init__(self, hash: str, last_numbers: str, bins: list,
                  path_of_serialization: str = "./found number.txt",
                  total_numbers: int = 16) -> None:
@@ -14,9 +16,9 @@ class Check_cumber_of_card:
         self.last_numbers = last_numbers
         self.bins = bins
         self.path_of_serialization = path_of_serialization
-        self.total_numbers = total_numbers
+        self.total_numbers = int(total_numbers)
 
-        logging.basicConfig(filename="message.log", filemode="a", level=logging.INFO)
+        logging.basicConfig(filename="message.log", filemode="a", level=logging.INFO, encoding="utf-8")
 
     @staticmethod
     def calculate_hash_sha384(number_of_card: str) -> str:
@@ -60,17 +62,17 @@ class Check_cumber_of_card:
             res = False
         return res
 
-    def find_number_of_card(self) -> Any:
+    def find_number_of_card(self, cores: Any) -> Any:
         """
         Ищет номер карты по хэшу, БИН банка, последним цифрам карты
 
+        :param cores: сколько ядер использовать
         :return: номер карты, если он найден в виде строки или False иначе
         """
         numbers = []
         for bin in self.bins:
             numbers.append(self.generate_number_of_card(bin))
 
-        cores = mp.cpu_count()
         try:
             with mp.Pool(processes=cores) as proc:
                 for number in numbers:
@@ -83,10 +85,63 @@ class Check_cumber_of_card:
             logging.info(f"Ошибка в многопоточном режиме")
 
     def serialization_number(self, number: str) -> None:
+        """
+        Сериализует полученное значение в файл, переданный при создании объекта класса
+
+        :param number: значение, которое необходимо сериализовать
+        :return: None
+        """
         try:
             with open(self.path_of_serialization, "w", encoding="utf-8") as write_file:
                 write_file.write(number)
         except FileNotFoundError as e:
-            logging.info(f"Ошибка сериализации. Файл не открылся.")
+            logging.error(f"Ошибка сериализации. Файл не открылся.")
         except Exception as e:
-            logging.info(f"Ошибка во время сериализации")
+            logging.error(f"Ошибка во время сериализации")
+
+    def create_plot(self) -> None:
+        """
+        Строит график зависимости времени выполнения программы от количества использованных ядер процессора
+
+        :return: None
+        """
+        try:
+            count_cores = mp.cpu_count()
+            range_cycle = range(1,  math.floor(1.5*count_cores))
+            time_list = []
+            cores_list = []
+            for cores in range_cycle:
+                start_time = time.time()
+                self.find_number_of_card(cores)
+                time_list.append(time.time() - start_time)
+                cores_list.append(cores)
+
+            plt.ylabel("time")
+            plt.xlabel("cores")
+            plt.plot(cores_list, time_list, color='navy', linestyle='--', marker='o', linewidth=1, markersize=4)
+            plt.show()
+        except Exception as e:
+            logging.error(f"Ошибка при создании графика")
+
+    @staticmethod
+    def check_luna(sequence: str) -> bool:
+        """
+        Алгоритм Луна - это алгоритм вычисления контрольной цифры номера пластиковой карты
+        в соответствии со стандартом ISO/IEC 7812.
+
+        выявляет ошибки, вызванные непреднамеренным искажением данных
+        :param sequence: последовательность, которую необходимо проверить
+        :return: булевое значение
+        """
+        if len(sequence) <= 1:
+            raise ValueError("Последовательность не может быть меньше 2 значений")
+        control_sum = 0
+        for i in range(-2, -len(sequence) - 1, -1):
+            summand = int(sequence[i])
+            if i % 2 == 0:
+                summand = summand * 2
+                if summand >= 10:
+                    summand = summand // 10 + summand % 10
+            control_sum += summand
+        control_digit = (10 - ((control_sum % 10) % 10))
+        return control_digit == int(sequence[-1])
